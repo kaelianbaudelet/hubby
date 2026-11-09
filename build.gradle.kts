@@ -7,8 +7,8 @@ plugins {
     kotlin("jvm") version ("2.3.21")
 }
 
-val version: String by project
-val group: String by project
+version = property("mod_version") as String
+group = property("maven_group") as String
 
 base {
     archivesName = property("archives_base_name") as String
